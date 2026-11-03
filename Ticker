@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #111111;
+      overflow: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .ticker-wrap {
+      width: 100%;
+      height: 60px;
+      line-height: 60px;
+      white-space: nowrap;
+      box-sizing: border-box;
+      background-color: #111111;
+      border-top: 2px solid #FFD700;
+    }
+    .ticker {
+      display: inline-block;
+      padding-left: 100%;
+      animation: ticker 35s linear infinite;
+    }
+    .ticker-item {
+      display: inline-block;
+      padding: 0 2.5rem;
+      font-size: 24px;
+      font-weight: bold;
+      color: #FFD700; /* Safety Yellow */
+    }
+    @keyframes ticker {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-100%, 0, 0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span class="ticker-item">🚨 SITE REMINDER: Crane pick scheduled for 10:00 AM at Grid G-12 — Keep exclusion zone clear!</span>
+      <span class="ticker-item">⚠️ WEATHER ALERT: High winds expected after 2:00 PM — Secure all loose rooftop decking & materials.</span>
+      <span class="ticker-item">🎉 SAFETY MILESTONE: 64 Consecutive Days Without a Lost Time Injury! Keep up the great work!</span>
+      <span class="ticker-item">📋 HRA REMINDER: 100% Fall Protection required for all work above 6 feet.</span>
+    </div>
+  </div>
+</body>
+</html>
